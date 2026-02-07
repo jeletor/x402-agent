@@ -1,5 +1,5 @@
 {
-  "name": "x402-agent",
+  "name": "x402-wallet",
   "version": "0.1.0",
   "description": "Agent wallet for x402 payment protocol",
   "main": "index.cjs",

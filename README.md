@@ -1,11 +1,13 @@
-# x402-agent
+# x402-wallet
 
 Agent wallet for the [x402 payment protocol](https://x402.org). Enables AI agents to pay for x402-protected resources automatically.
+
+> Note: This is a standalone wallet implementation. For Coinbase's MCP server, see [@x402/agent](https://npmjs.com/package/x402-agent).
 
 ## Installation
 
 ```bash
-npm install x402-agent
+npm install x402-wallet
 ```
 
 ## Quick Start
@@ -123,13 +125,13 @@ const response = await paidFetch('https://api.example.com/data');
 
 ```bash
 # Check balance
-X402_PRIVATE_KEY=0x... npx x402-agent balance
+X402_PRIVATE_KEY=0x... npx x402-wallet balance
 
 # Fetch a URL (auto-pay 402)
-X402_PRIVATE_KEY=0x... npx x402-agent get https://api.example.com/data
+X402_PRIVATE_KEY=0x... npx x402-wallet get https://api.example.com/data
 
 # POST to a URL
-X402_PRIVATE_KEY=0x... npx x402-agent post https://api.example.com/submit '{"key":"value"}'
+X402_PRIVATE_KEY=0x... npx x402-wallet post https://api.example.com/submit '{"key":"value"}'
 ```
 
 ## Networks
