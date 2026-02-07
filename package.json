@@ -1,0 +1,46 @@
+{
+  "name": "x402-agent",
+  "version": "0.1.0",
+  "description": "Agent wallet for x402 payment protocol",
+  "main": "index.cjs",
+  "type": "commonjs",
+  "scripts": {
+    "test": "node test.cjs"
+  },
+  "keywords": [
+    "x402",
+    "payment",
+    "agent",
+    "ai",
+    "http-402",
+    "stablecoin",
+    "usdc"
+  ],
+  "author": "Jeletor <jeletor@jeletor.com>",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jeletor/x402-agent.git"
+  },
+  "homepage": "https://github.com/jeletor/x402-agent#readme",
+  "dependencies": {
+    "@x402/core": "^2.3.0",
+    "@x402/evm": "^2.3.0",
+    "@x402/fetch": "^2.3.0",
+    "viem": "^2.45.1"
+  },
+  "peerDependencies": {
+    "ai-wot": ">=0.8.0"
+  },
+  "peerDependenciesMeta": {
+    "ai-wot": {
+      "optional": true
+    }
+  },
+  "engines": {
+    "node": ">=18"
+  },
+  "bin": {
+    "x402-agent": "./cli.cjs"
+  }
+}
